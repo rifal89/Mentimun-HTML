@@ -1,0 +1,127 @@
+Noted Revisi 12 Juni 2015
+
+assets/css/main.css
+Line 3948
+Line 5980
+Line 3949 - 3954
+
+Disetiap file html, value dari fungsi jquery :
+
+$('#shareme').sharrre({ dan $('#shareme-pop').sharrre({ diganti menjadi :
+
+share: {
+    googlePlus: true,
+    facebook: true,
+    twitter: true
+},
+buttons: {
+    googlePlus: {
+        size: 'medium', 
+        annotation:'bubble'
+    },
+    facebook: {
+        layout: 'button_count',
+        send: 'false',
+        faces: 'false',
+        share: 'false'
+    },
+},
+enableHover: false,
+enableCounter: false,
+enableTracking: true,
+url: 'http://webgopek.com/'
+
+--------------------------------------------------------------------------------------------------
+
+Disetiap file html, pada bagian <div class="favorite-button m-t-10">, dihilangkan bagian : 
+"<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="E-mail" href="#">
+    <i class="fa fa-envelope"></i>
+</a>"
+
+--------------------------------------------------------------------------------------------------
+
+Disetiap file html, setelah bagian :
+
+<div class="social-icons">
+    <div id="shareme-pop" data-url="http://webgopek.com/" data-text="Sharing product to social media"></div>
+</div>
+
+ditambahkan (untuk button mailto di sebelah social share) :
+
+<div class="mail-share">
+    <script type="text/javascript">
+        $(window).load(function(){
+            var fullUrl = window.location.href;
+            var titleWeb = $('title').text();
+            $('.btn-mailto').attr('href','mailto:?subject='+ titleWeb +'&amp;body=' + fullUrl);
+        });
+    </script>
+
+    <a class="btn btn-primary btn-mailto" data-toggle="tooltip" data-placement="right" title="E-mail" href="#">
+        <i class="fa fa-envelope"></i>
+    </a>
+</div>
+
+==================================================================================================
+
+Noted Revisi 31 Mei 2015
+
+Penambahan file valid-input.js
+
+assets/js/script.js
+Line 581 (Hapus ALPHABET INPUT)
+
+checkout/index.html
+Line 412 (ganti jquery.numeric.js dengan valid-input.js)
+Line 415 (penambahan $('.alpha-input').alpha({allow:" "});)
+Line 417 (penambahan $('.alphanumeric').alphanumeric();)
+Line 569 (ganti class numeric dengan alphanumeric di input Nomor Identitas)
+
+register_store/index.html
+Line 408 (ganti jquery.numeric.js dengan valid-input.js)
+Line 412 (penambahan $('.numeric').numeric();)
+
+account/index.html
+Line 408 (ganti jquery.numeric.js dengan valid-input.js)
+Line 3065 - 3071
+
+=================================================================================
+
+Noted Revisi 29 Mei 2015
+
+assets/css/main.css
+Line 6257
+Line 6404 - 6433
+
+assets/js/script.js
+Line 581
+
+register_store/index.html
+Line 492 (penambahan class alpha-input)
+Line 572 (penambahan class input-help)
+Line 577 & 579 (penambahan class col-sm-3 col-xs-3)
+Line 661 (penambahan class alpha-input)
+Line 694 (penambahan class input-help)
+Line 699 & 702 (penambahan class col-sm-3 col-xs-3)
+Line 1049 (penambahan class alpha-input)
+
+checkout/index.html
+Line 542 (penambahan class alpha-input)
+Line 549 (penambahan class alpha-input)
+Line 591 (penambahan class alpha-input)
+Line 674 (penambahan class input-help)
+Line 688 (penambahan class input-help)
+Line 897 (penambahan class alpha-input)
+Line 904 (penambahan class alpha-input)
+
+account/index.html
+Line 527 (penambahan class alpha-input)
+Line 535 (penambahan class alpha-input)
+Line 562 (penggantian select menjadi input & penambahan class alpha-input)
+Line 1086 (penambahan class alpha-input)
+Line 1709 (penambahan class alpha-input)
+Line 1717 (penambahan class alpha-input)
+Line 1744 (penggantian select menjadi input & penambahan class alpha-input)
+Line 2292 (penambahan class alpha-input)
+Line 2876 - 2956 (fixed bug BRAND CAROUSEL)
+Line 2999 (penghapusan alert(page);)

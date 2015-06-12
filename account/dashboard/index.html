@@ -1,0 +1,466 @@
+<div class="row">
+	<div class="col-md-12">
+		<h3 class="nomargin-top">Profil Saya</h3>
+		<p><strong>Hello, John Doe!</strong></p>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-12">
+				<h3 class="nomargin-top">Account Information</h3>
+                <a class="btn btn-primary edit-ontop editlive">
+                    <i class="fa fa-pencil"></i>
+                    Edit
+                </a>
+			</div>
+			<div class="col-md-6">
+				<h4>Data Pribadi</h4>
+				<div id="result-accountinfo">
+					<table class="table table-striped">
+	                    <tbody>
+	                        <tr>
+	                            <td><b>Nama Lengkap</b></td>
+	                            <td>John Doe</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Nama Panggilan</b></td>
+	                            <td>John</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Gender</b></td>
+	                            <td>Laki-laki</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Tempat Lahir</b></td>
+	                            <td>Jakarta</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Tanggal Lahir</b></td>
+	                            <td>12 Januari 1980</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Status Rumah</b></td>
+	                            <td>Pribadi</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Pekerjaan</b></td>
+	                            <td>Karyawan Swasta</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Pendidikan</b></td>
+	                            <td>Sarjana</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Status Pernikahan</b></td>
+	                            <td>Menikah</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>No. HP</b></td>
+	                            <td>08123456789</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>No. Telepon</b></td>
+	                            <td>021-12345678</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Email</b></td>
+	                            <td><a href="mailto:john.doe@mail.com">john.doe@mail.com</a></td>
+	                        </tr>
+	                	</tbody>
+	                </table>
+                </div>
+                <div id="edit-accountinfo-form" style="display:none">
+                	<div class="style-form">
+						<div class="row form-group">
+							<div class="col-md-4">
+								<label for="full_name">Nama Lengkap</label>
+							</div>
+							<div class="col-md-8">
+								<input type="text" name="full_name" id="full_name" class="form-control unicase-form-control text-input" value="John Doe" />
+							</div>
+						</div>
+						<div class="row form-group">
+                            <div class="col-md-4">
+								<label for="nick-name">Nama Panggilan</label>
+							</div>
+                            <div class="col-md-8">
+                            	<input type="text" name="nick-name" id="nick-name" class="form-control unicase-form-control text-input" value="John" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="gender">Gender</label>
+							</div>
+                            <div class="col-md-8">
+                                <div class="radio radio-checkout-unicase">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-6">
+                                            <input id="laki-laki" type="radio" name="gender" value="laki-laki" checked="true" />
+                                            <label class="radio-button" for="laki-laki">Laki-laki</label>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6">
+                                            <input id="perempuan" type="radio" name="gender" value="perempuan" />
+                                            <label class="radio-button" for="perempuan">Perempuan</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="tempat-lahir">Tempat Lahir</label>
+							</div>
+                            <div class="col-md-8">
+                            	<select name="tempat-lahir" id="tempat-lahir" class="form-control unicase-form-control selectpicker">
+                            		<option>Pilih Kota</option>
+                            		<option value="Jakarta" selected="true">Jakarta</option>
+                            		<option value="Bekasi">Bekasi</option>
+                            	</select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="tgl-lahir">Tanggal Lahir</label>
+							</div>
+                            <div class="col-md-8">
+                            	<input type="text" name="tgl-lahir" id="tgl-lahir" class="form-control unicase-form-control text-input datepicker" value="12 Januari 1980" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="status_rumah">Status Rumah</label>
+							</div>
+                            <div class="col-md-8">
+        						<div class="radio radio-checkout-unicase">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-4">
+                                            <input id="pribadi" type="radio" name="status-rmh" value="pribadi" checked="true" />
+                                            <label class="radio-button" for="pribadi">Pribadi</label>
+                                        </div>
+                                        <div class="col-md-12 col-sm-4">
+                                            <input id="orang-tua" type="radio" name="status-rmh" value="orang-tua" />
+                                            <label class="radio-button" for="orang-tua">Orang Tua</label>
+                                        </div>
+                                        <div class="col-md-12 col-sm-4">
+                                            <input id="kontrak" type="radio" name="status-rmh" value="kontrak" />
+                                            <label class="radio-button" for="kontrak">Kontrak</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="pekerjaan">Pekerjaan</label>
+							</div>
+                            <div class="col-md-8">
+                            	<select name="pekerjaan" id="pekerjaan" class="form-control unicase-form-control selectpicker">
+                            		<option>Pilih Pekerjaan</option>
+                            		<option value="Karyawan Swasta" selected="true">Karyawan Swasta</option>
+                            		<option value="Pegawai Negeri">Pegawai Negeri</option>
+                            	</select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="pendidikan">Pendidikan</label>
+							</div>
+                            <div class="col-md-8">
+                            	<select id="pendidikan" name="pendidikan" class="form-control unicase-form-control selectpicker">
+                                    <option>Pilih Pendidikan</option>
+                                    <option value="Sarjana" selected="true">Sarjana</option>
+                                    <option value="SMA">SMA</option>
+                                    <option value="SMP">SMP</option>
+                                    <option value="SD">SD</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="status_pernikahan">Status Pernikahan</label>
+							</div>
+                            <div class="col-md-8">
+        						<div class="radio radio-checkout-unicase">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-6">
+                                            <input id="menikah" type="radio" name="status_pernikahan" value="menikah" />
+                                            <label class="radio-button" for="menikah">Menikah</label>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6">
+                                            <input id="belum_menikah" type="radio" name="status_pernikahan" value="belum_menikah" checked="true" />
+                                            <label class="radio-button" for="belum_menikah">Belum Menikah</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="no_hp">No. HP</label>
+							</div>
+                            <div class="col-md-8">
+                            	<input type="text" name="no_hp" class="form-control unicase-form-control text-input" id="no_hp" value="08123456789" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="no_telp">No. Telepon</label>
+							</div>
+                            <div class="col-md-8">
+                            	<input type="text" name="no_telp" class="form-control unicase-form-control text-input" id="no_telp" value="021-12345678" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="email">Email</label>
+							</div>
+                            <div class="col-md-8">
+                            	<input type="email" name="email" class="form-control unicase-form-control text-input" id="email" value="john.doe@mail.com" />
+                            </div>
+                        </div>
+					</div>
+                </div>
+			</div>
+			<div class="col-md-6">
+				<h4>Alamat Sesuai KTP</h4>
+				<div id="result-addressinfo">
+					<table class="table table-striped">
+	                    <tbody>
+	                    	<tr>
+	                            <td><b>Negara</b></td>
+	                            <td>Indonesia</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Propinsi</b></td>
+	                            <td>DKI Jakarta</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Kota</b></td>
+	                            <td>Jakarta</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Kecamatan</b></td>
+	                            <td>Setiabudi</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Kode Pos</b></td>
+	                            <td>12960</td>
+	                        </tr>
+	                        <tr>
+	                            <td><b>Alamat</b></td>
+	                            <td>
+	                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+					</table>
+				</div>
+				<div id="edit-addressinfo-form" style="display:none;">
+					<div class="style-form">
+						<div class="row form-group">
+                            <div class="col-md-4">
+								<label for="negara">Negara</label>
+							</div>
+                            <div class="col-md-8">
+                            	<select name="negara" id="negara" class="form-control unicase-form-control selectpicker">
+                            		<option>Pilih Negara</option>
+                            		<option value="Indonesia" selected="true">Indonesia</option>
+                            		<option value="USA">USA</option>
+                            	</select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="propinsi">Propinsi</label>
+							</div>
+                            <div class="col-md-8">
+                            	<select name="propinsi" id="propinsi" class="form-control unicase-form-control selectpicker">
+                            		<option>Pilih Propinsi</option>
+                            		<option value="DKI Jakarta" selected="true">DKI Jakarta</option>
+                            		<option value="Jawa Barat">Jawa Barat</option>
+                            	</select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="kota">Kota</label>
+							</div>
+                            <div class="col-md-8">
+                            	<select name="kota" id="kota" class="form-control unicase-form-control selectpicker">
+                            		<option>Pilih Kota</option>
+                            		<option value="Jakarta" selected="true">Jakarta</option>
+                            		<option value="Bekasi">Bekasi</option>
+                            	</select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="kecamatan">Kecamatan</label>
+							</div>
+                            <div class="col-md-8">
+                            	<select name="kecamatan" id="kecamatan" class="form-control unicase-form-control selectpicker">
+                            		<option>Pilih Kecamatan</option>
+									<option value="Kecamatan 1" selected="true">Setiabudi</option>
+									<option value="Kecamatan 2">Kecamatan 2</option>
+                            	</select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="kode_pos">Kode Pos</label>
+							</div>
+                            <div class="col-md-8">
+                            	<input type="text" name="kode_pos" class="form-control unicase-form-control text-input" id="kode_pos" value="12960" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+								<label for="alamat">Alamat</label>
+							</div>
+                            <div class="col-md-8">
+                            	<textarea name="alamat" id="alamat" class="form-control unicase-form-control text-input">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</textarea>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-6">
+                <h4>Alamat Domisili</h4>
+                <div id="result-addressdomisili">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td><b>Negara</b></td>
+                                <td>Indonesia</td>
+                            </tr>
+                            <tr>
+                                <td><b>Propinsi</b></td>
+                                <td>DKI Jakarta</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kota</b></td>
+                                <td>Jakarta</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kecamatan</b></td>
+                                <td>Setiabudi</td>
+                            </tr>
+                            <tr>
+                                <td><b>Kode Pos</b></td>
+                                <td>12960</td>
+                            </tr>
+                            <tr>
+                                <td><b>Alamat</b></td>
+                                <td>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="edit-addressdomisili-form" style="display:none;">
+                    <div class="style-form">
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <label for="negara_domisili">Negara</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select name="negara_domisili" id="negara_domisili" class="form-control unicase-form-control selectpicker">
+                                    <option>Pilih Negara</option>
+                                    <option value="Indonesia" selected="true">Indonesia</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <label for="propinsi_domisili">Propinsi</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select name="propinsi_domisili" id="propinsi_domisili" class="form-control unicase-form-control selectpicker">
+                                    <option>Pilih Propinsi</option>
+                                    <option value="DKI Jakarta" selected="true">DKI Jakarta</option>
+                                    <option value="Jawa Barat">Jawa Barat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <label for="kota_domisili">Kota</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select name="kota_domisili" id="kota_domisili" class="form-control unicase-form-control selectpicker">
+                                    <option>Pilih Kota</option>
+                                    <option value="Jakarta" selected="true">Jakarta</option>
+                                    <option value="Bekasi">Bekasi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <label for="kecamatan_domisili">Kecamatan</label>
+                            </div>
+                            <div class="col-md-8">
+                                <select name="kecamatan_domisili" id="kecamatan_domisili" class="form-control unicase-form-control selectpicker">
+                                    <option>Pilih Kecamatan</option>
+                                    <option value="Kecamatan 1" selected="true">Setiabudi</option>
+                                    <option value="Kecamatan 2">Kecamatan 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <label for="kode_pos_domisili">Kode Pos</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" name="kode_pos_domisili" class="form-control unicase-form-control text-input" id="kode_pos_domisili" value="12960" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <label for="alamat_domisili">Alamat</label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea name="alamat_domisili" id="alamat_domisili" class="form-control unicase-form-control text-input">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-12 aligncenter btn-saveinfo">
+				<hr/>
+                <button class="btn btn-danger">Cancel</button>
+                <button class="btn btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.editlive').click(function(){
+    	var idbox = $(this).attr('id');
+    	$(this).hide();
+
+        $('#result-accountinfo').hide();
+        $('#result-addressinfo').hide();
+        $('#result-addressdomisili').hide();
+
+        $('#edit-accountinfo-form').show();
+        $('#edit-addressinfo-form').show();
+        $('#edit-addressdomisili-form').show();
+        $('.btn-saveinfo').show();
+
+    	$('.btn-saveinfo').click(function(){
+    		$('#result-accountinfo').show();
+            $('#result-addressinfo').show();
+            $('#result-addressdomisili').show();
+
+            $('#edit-accountinfo-form').hide();
+            $('#edit-addressinfo-form').hide();
+            $('#edit-addressdomisili-form').hide();
+            $('.btn-saveinfo').hide();
+    		$('.edit-ontop').show();
+    	});
+    });
+});
+</script>
