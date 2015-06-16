@@ -43,7 +43,7 @@ Disetiap file html, pada bagian <div class="favorite-button m-t-10">, dihilangka
 Disetiap file html, setelah bagian :
 
 <div class="social-icons">
-    <div id="shareme-pop" data-url="http://webgopek.com/" data-text="Sharing product to social media"></div>
+    <div id="shareme-pop" data-url="http://webgopek.com/mentimun/sample1/detail/" data-text="Sharing product to social media"></div>
 </div>
 
 ditambahkan (untuk button mailto di sebelah social share) :
