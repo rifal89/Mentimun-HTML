@@ -6107,6 +6107,28 @@ a {
     text-align: center;
   }
 
+  #cart-intop .row {
+    display: table;
+    width: 100%;
+  }
+
+  #cart-intop .row .col-xs-3,
+  #cart-intop .row .col-xs-7,
+  #cart-intop .row .col-xs-1 {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  #cart-intop .row .col-xs-3 {
+    width: 25%;
+  }
+  #cart-intop .row .col-xs-7 {
+    width: 50%;
+  }
+  #cart-intop .row .col-xs-1 {
+    width: 10%;
+  }
+
   .owl-carousel {
     margin: 0;
   }
